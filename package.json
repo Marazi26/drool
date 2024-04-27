@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "less-g": "^3.9.2"
+  },
+  "devDependencies": {
+    "less": "^4.2.0"
+  }
+}
