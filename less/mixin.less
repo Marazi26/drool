@@ -1,0 +1,94 @@
+@import "variables.less";
+
+.desktop-vh-sizing {
+    min-height: 100vh;
+}
+
+.desktop-vh-sizing-tablet {
+    min-height: 60vh;
+}
+
+/**********************************/
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-box-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/********************************/
+.norm-text {
+    font-family: @font-family;
+    font-weight: 400;
+    color: @color-black;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+}
+
+.norm-text-mob {
+    .norm-text();
+    font-size: .9rem;
+    text-align: center;
+}
+
+.title {
+    font-family: @font-family;
+    color: @color-black;
+    line-height: 3.8rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.title-mob {
+    .title();
+    line-height: 2.3rem;
+    text-align: center;
+}
+
+/**********************************/
+.button {
+    .norm-text();
+    font-weight: 500;
+    color: @color-white;
+    background-color: @color-blue;
+    padding: .8rem 3rem;
+    outline: none;
+    border: .02rem solid transparent;
+    transition: .2s linear;
+    cursor: pointer;
+
+    &:hover {
+        background-color: @color-white;
+        color: @color-blue;
+        border: .02rem solid @color-blue;
+    }
+}
+
+.button-yellow {
+    .button();
+    background-color: @color-yellow;
+
+    &:hover {
+        color: @color-yellow;
+        border-color: @color-yellow;
+    }
+}
+
+.button-mob{
+    .button();
+    padding: .7rem 2.5rem;
+    font-size: .9rem;  
+}
+
+.button-yellow-mob{
+    .button-yellow();
+    padding: .7rem 2.5rem;
+    font-size: .9rem;
+}
