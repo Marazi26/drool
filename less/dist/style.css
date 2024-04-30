@@ -4,6 +4,12 @@
 .desktop-vh-sizing-tablet {
   min-height: 60vh;
 }
+.desktop-sizing {
+  width: 80%;
+}
+.mobile-sizing {
+  width: 95%;
+}
 /**********************************/
 .flex-box {
   display: flex;
@@ -21,7 +27,7 @@
   font-family: Poppins, sans-serif;
   font-weight: 400;
   color: #010001;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5rem;
   padding: 1rem 0;
 }
@@ -29,7 +35,7 @@
   font-family: Poppins, sans-serif;
   font-weight: 400;
   color: #010001;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5rem;
   padding: 1rem 0;
   font-size: 0.9rem;
@@ -56,10 +62,10 @@
   font-family: Poppins, sans-serif;
   font-weight: 400;
   color: #010001;
-  font-size: 1rem;
   line-height: 1.5rem;
   padding: 1rem 0;
   font-weight: 500;
+  font-size: 1.1rem;
   color: #ffffff;
   background-color: #0a2050;
   padding: 0.8rem 3rem;
@@ -77,10 +83,10 @@
   font-family: Poppins, sans-serif;
   font-weight: 400;
   color: #010001;
-  font-size: 1rem;
   line-height: 1.5rem;
   padding: 1rem 0;
   font-weight: 500;
+  font-size: 1.1rem;
   color: #ffffff;
   background-color: #0a2050;
   padding: 0.8rem 3rem;
@@ -103,10 +109,10 @@
   font-family: Poppins, sans-serif;
   font-weight: 400;
   color: #010001;
-  font-size: 1rem;
   line-height: 1.5rem;
   padding: 1rem 0;
   font-weight: 500;
+  font-size: 1.1rem;
   color: #ffffff;
   background-color: #0a2050;
   padding: 0.8rem 3rem;
@@ -126,10 +132,10 @@
   font-family: Poppins, sans-serif;
   font-weight: 400;
   color: #010001;
-  font-size: 1rem;
   line-height: 1.5rem;
   padding: 1rem 0;
   font-weight: 500;
+  font-size: 1.1rem;
   color: #ffffff;
   background-color: #0a2050;
   padding: 0.8rem 3rem;
@@ -166,6 +172,40 @@ a {
 }
 img {
   width: 100%;
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(15%);
+  }
+  50% {
+    transform: translateY(25%);
+  }
+  75% {
+    transform: translateY(-25%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes down-up {
+  0% {
+    transform: translateY(25%);
+  }
+  25% {
+    transform: translateY(15%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  75% {
+    transform: translateY(15%);
+  }
+  100% {
+    transform: translateY(25%);
+  }
 }
 /*** NAV AND HEADER SECTION ****************************************/
 .nav-header-container {
@@ -264,7 +304,7 @@ img {
   font-family: Poppins, sans-serif;
   font-weight: 400;
   color: #010001;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5rem;
   padding: 1rem 0;
   font-size: 1.3rem;
@@ -290,7 +330,6 @@ img {
   font-family: Poppins, sans-serif;
   font-weight: 400;
   color: #010001;
-  font-size: 1rem;
   line-height: 1.5rem;
   padding: 1rem 0;
   font-size: 1.1rem;
@@ -300,10 +339,10 @@ img {
   font-family: Poppins, sans-serif;
   font-weight: 400;
   color: #010001;
-  font-size: 1rem;
   line-height: 1.5rem;
   padding: 1rem 0;
   font-weight: 500;
+  font-size: 1.1rem;
   color: #ffffff;
   background-color: #0a2050;
   padding: 0.8rem 3rem;
@@ -323,10 +362,10 @@ img {
   font-family: Poppins, sans-serif;
   font-weight: 400;
   color: #010001;
-  font-size: 1rem;
   line-height: 1.5rem;
   padding: 1rem 0;
   font-weight: 500;
+  font-size: 1.1rem;
   color: #ffffff;
   background-color: #0a2050;
   padding: 0.8rem 3rem;
@@ -375,7 +414,6 @@ img {
     font-family: Poppins, sans-serif;
     font-weight: 400;
     color: #010001;
-    font-size: 1rem;
     line-height: 1.5rem;
     padding: 1rem 0;
     font-size: 1.1rem;
@@ -402,6 +440,7 @@ img {
     font-family: Poppins, sans-serif;
     font-weight: 400;
     color: #010001;
+    font-size: 1.1rem;
     line-height: 1.5rem;
     padding: 1rem 0;
     font-size: 1rem;
@@ -449,7 +488,7 @@ img {
     font-family: Poppins, sans-serif;
     font-weight: 400;
     color: #010001;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5rem;
     padding: 1rem 0;
     font-size: 0.9rem;
@@ -478,7 +517,7 @@ img {
     font-family: Poppins, sans-serif;
     font-weight: 400;
     color: #010001;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5rem;
     padding: 1rem 0;
     font-size: 0.9rem;
@@ -496,10 +535,10 @@ img {
     font-family: Poppins, sans-serif;
     font-weight: 400;
     color: #010001;
-    font-size: 1rem;
     line-height: 1.5rem;
     padding: 1rem 0;
     font-weight: 500;
+    font-size: 1.1rem;
     color: #ffffff;
     background-color: #0a2050;
     padding: 0.8rem 3rem;
@@ -521,10 +560,10 @@ img {
     font-family: Poppins, sans-serif;
     font-weight: 400;
     color: #010001;
-    font-size: 1rem;
     line-height: 1.5rem;
     padding: 1rem 0;
     font-weight: 500;
+    font-size: 1.1rem;
     color: #ffffff;
     background-color: #0a2050;
     padding: 0.8rem 3rem;
@@ -639,5 +678,655 @@ img {
     background-position: left bottom;
     height: 15%;
     width: 35%;
+  }
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-overlay {
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.about .about-overlay .about-img img {
+  width: 100%;
+}
+.about .about-overlay .about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-overlay .about-info h2 {
+  font-family: Poppins, sans-serif;
+  color: #010001;
+  line-height: 3.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.about .about-overlay .about-info p {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #010001;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  text-align: center;
+  width: 82%;
+}
+.about .about-overlay .about-info div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  width: 100%;
+}
+.about .about-overlay .about-info div a {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #010001;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: #e7d619;
+  text-transform: uppercase;
+}
+.about .about-overlay .about-info div img {
+  width: 1.5%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about .about-overlay {
+    min-height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+  }
+  .about .about-overlay .about-info h2 {
+    font-family: Poppins, sans-serif;
+    color: #010001;
+    line-height: 3.8rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    text-align: center;
+  }
+  .about .about-overlay .about-info p {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #010001;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .about .about-overlay {
+    min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+  }
+  .about .about-overlay .about-info h2 {
+    font-family: Poppins, sans-serif;
+    color: #010001;
+    line-height: 3.8rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    text-align: center;
+  }
+  .about .about-overlay .about-info p {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #010001;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 88%;
+  }
+}
+.products {
+  background-image: url("../assets/porducts/animal-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  overflow: hidden;
+}
+.products .porducts-overlay {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.products .porducts-overlay .product-card {
+  animation: up-down 3s linear infinite;
+  width: 20%;
+}
+.products .porducts-overlay .product-card img {
+  width: 90%;
+  border-radius: 2rem;
+}
+.products .porducts-overlay .product-card h2 {
+  font-family: Poppins, sans-serif;
+  color: #010001;
+  line-height: 3.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+.products .porducts-overlay .product-card p {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #010001;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  color: #ffffff;
+  text-align: center;
+  padding: 0;
+  font-size: 1rem;
+}
+.products .porducts-overlay .cardUp {
+  animation: down-up 2s linear infinite;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    min-height: 90vh;
+  }
+  .products .porducts-overlay {
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .products .porducts-overlay .product-card {
+    animation: up-down 3s linear infinite;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .products .porducts-overlay .product-card img {
+    width: 65%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: right;
+    min-height: 100vh;
+  }
+  .products .porducts-overlay {
+    min-height: 100vh;
+    width: 95%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .products .porducts-overlay .product-card {
+    animation: up-down 3s linear infinite;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: unset;
+  }
+  .products .porducts-overlay .product-card img {
+    width: 45%;
+  }
+  .products .porducts-overlay .product-card h2 {
+    font-family: Poppins, sans-serif;
+    color: #010001;
+    line-height: 3.8rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    color: #ffffff;
+    text-align: center;
+  }
+  .products .porducts-overlay .product-card p {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #010001;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
+}
+.caring {
+  margin: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+.caring .caring-overlay {
+  min-height: 60vh;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.caring .caring-overlay .caring-img {
+  position: relative;
+  width: 50%;
+}
+.caring .caring-overlay .caring-img img {
+  width: 90%;
+  position: sticky;
+  z-index: 2;
+}
+.caring .caring-overlay .caring-img::after {
+  content: "";
+  background-image: url("../assets/caring/pet-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+  height: 110%;
+  width: 90%;
+  position: absolute;
+  left: -10rem;
+  bottom: -2rem;
+  z-index: 0;
+}
+.caring .caring-overlay .caring-card {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+}
+.caring .caring-overlay .caring-card .caring-card-img {
+  width: 10%;
+}
+.caring .caring-overlay .caring-card .caring-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+}
+.caring .caring-overlay .caring-card .caring-info h2 {
+  font-family: Poppins, sans-serif;
+  color: #010001;
+  line-height: 3.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.caring .caring-overlay .caring-card .caring-info p {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #010001;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+}
+.caring .caring-overlay .caring-card .caring-info div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.2rem;
+  width: 100%;
+}
+.caring .caring-overlay .caring-card .caring-info div a {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #010001;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: #e7d619;
+  text-transform: uppercase;
+}
+.caring .caring-overlay .caring-card .caring-info div img {
+  width: 3%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .caring {
+    margin: 5rem 0;
+  }
+  .caring .caring-overlay .caring-img img {
+    width: 100%;
+  }
+  .caring .caring-overlay .caring-img::after {
+    left: -5rem;
+    bottom: -2rem;
+  }
+  .caring .caring-overlay .caring-card .caring-card-img {
+    width: 10%;
+  }
+  .caring .caring-overlay .caring-card .caring-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: start;
+  }
+  .caring .caring-overlay .caring-card .caring-info h2 {
+    font-family: Poppins, sans-serif;
+    color: #010001;
+    line-height: 3.8rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: unset;
+  }
+  .caring .caring-overlay .caring-card .caring-info p {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #010001;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    text-align: center;
+    text-align: left;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .caring {
+    margin: 5rem 0;
+  }
+  .caring .caring-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .caring .caring-overlay .caring-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
+  .caring .caring-overlay .caring-img::after {
+    left: -3rem;
+    bottom: 0;
+  }
+  .caring .caring-overlay .caring-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .caring .caring-overlay .caring-card .caring-card-img {
+    width: 10%;
+  }
+  .caring .caring-overlay .caring-card .caring-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .caring .caring-overlay .caring-card .caring-info h2 {
+    font-family: Poppins, sans-serif;
+    color: #010001;
+    line-height: 3.8rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    text-align: center;
+    line-height: unset;
+    padding: 0;
+  }
+  .caring .caring-overlay .caring-card .caring-info p {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #010001;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .caring .caring-overlay .caring-card .caring-info div {
+    justify-content: center;
+  }
+}
+.choosing-us {
+  margin: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.choosing-us .choosing-us-overlay {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+}
+.choosing-us .choosing-us-overlay .choosing-title-img {
+  width: 5%;
+}
+.choosing-us .choosing-us-overlay .choosing-title-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+}
+.choosing-us .choosing-us-overlay .choosing-title-info h2 {
+  font-family: Poppins, sans-serif;
+  color: #010001;
+  line-height: 3.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: -1.3rem;
+}
+.choosing-us .choosing-us-overlay .choosing-title-info p {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #010001;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+}
+.choosing-us .choosing-us-overlay .choosing-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15rem;
+}
+.choosing-us .choosing-us-overlay .choosing-cards .choosing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 33.3%;
+}
+.choosing-us .choosing-us-overlay .choosing-cards .choosing-card .pet img {
+  width: 100%;
+}
+.choosing-us .choosing-us-overlay .choosing-cards .choosing-card .pet-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.choosing-us .choosing-us-overlay .choosing-cards .choosing-card .pet-info img {
+  width: 90%;
+}
+.choosing-us .choosing-us-overlay .choosing-cards .choosing-card .pet-info h2 {
+  font-family: Poppins, sans-serif;
+  color: #010001;
+  line-height: 3.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+.choosing-us .choosing-us-overlay .read-more {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  width: 100%;
+}
+.choosing-us .choosing-us-overlay .read-more a {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #010001;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: #e7d619;
+  text-transform: uppercase;
+}
+.choosing-us .choosing-us-overlay .read-more img {
+  width: 3%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .choosing-us {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .choosing-us .choosing-us-overlay .choosing-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  .choosing-us .choosing-us-overlay .choosing-cards .choosing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .choosing-us .choosing-us-overlay .choosing-cards .choosing-card .pet-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .choosing-us .choosing-us-overlay .choosing-cards .choosing-card .pet-info img {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .choosing-us {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .choosing-us .choosing-us-overlay {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .choosing-us .choosing-us-overlay .choosing-title {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .choosing-us .choosing-us-overlay .choosing-title .choosing-title-img {
+    width: 9%;
+  }
+  .choosing-us .choosing-us-overlay .choosing-title .choosing-title-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .choosing-us .choosing-us-overlay .choosing-title .choosing-title-info h2 {
+    font-family: Poppins, sans-serif;
+    color: #010001;
+    line-height: 3.8rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    text-align: center;
+    margin-top: -0.6rem;
+  }
+  .choosing-us .choosing-us-overlay .choosing-title .choosing-title-info p {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #010001;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .choosing-us .choosing-us-overlay .choosing-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .choosing-us .choosing-us-overlay .choosing-cards .choosing-card {
+    width: 100%;
   }
 }
