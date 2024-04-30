@@ -22,6 +22,50 @@ img {
     width: 100%;
 }
 
+@keyframes up-down {
+    0% {
+        transform: translateY(0%);
+    }
+
+    25% {
+        transform: translateY(15%);
+    }
+
+    50% {
+        transform: translateY(25%);
+    }
+
+    75% {
+        transform: translateY(-25%);
+    }
+
+    100% {
+        transform: translateY(-0%);
+    }
+}
+
+@keyframes down-up {
+    0% {
+        transform: translateY(25%);
+    }
+
+    25% {
+        transform: translateY(15%);
+    }
+
+    50% {
+        transform: translateY(0%);
+    }
+
+    75% {
+        transform: translateY(15%);
+    }
+
+    100% {
+        transform: translateY(25%);
+    }
+}
+
 /*** NAV AND HEADER SECTION ****************************************/
 
 .nav-header-container {
@@ -357,6 +401,201 @@ img {
             background-position: left bottom;
             height: 15%;
             width: 35%;
+        }
+    }
+}
+
+
+.about {
+    .flex-box-column();
+
+    .about-overlay {
+        min-height: 65vh;
+        .flex-box-column();
+        .desktop-sizing();
+
+        .about-img {
+            img {
+                width: 100%;
+            }
+        }
+
+        .about-info {
+            .flex-box-column();
+
+            h2 {
+                .title();
+            }
+
+            p {
+                .norm-text();
+                text-align: center;
+                width: 82%;
+            }
+
+            div {
+                .flex-box();
+                justify-content: center;
+                gap: .2rem;
+                width: 100%;
+
+                a {
+                    .norm-text();
+                    font-size: 1rem;
+                    color: @color-yellow;
+                    text-transform: uppercase;
+                }
+
+                img {
+                    width: 1.5%;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        .about-overlay {
+            min-height: 45vh;
+            .flex-box-column();
+            .mobile-sizing();
+
+            .about-info {
+                h2 {
+                    .title-mob();
+                }
+
+                p {
+                    .norm-text-mob();
+                    width: 80%;
+                }
+
+            }
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:768px) {
+        .about-overlay {
+            min-height: 45vh;
+            .flex-box-column();
+            .mobile-sizing();
+
+            .about-info {
+                h2 {
+                    .title-mob();
+                }
+
+                p {
+                    .norm-text-mob();
+                    width: 88%;
+                }
+
+            }
+        }
+    }
+}
+
+.products {
+    background-image: url("../assets/porducts/animal-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .flex-box-column();
+    min-height: 90vh;
+
+    .porducts-overlay {
+        .desktop-sizing();
+        .flex-box();
+
+        .product-card {
+            animation: up-down 3s linear infinite;
+            width: 20%;
+
+            img {
+                width: 90%;
+                border-radius: 2rem;
+            }
+
+            h2 {
+                .title();
+                font-size: 1.5rem;
+                color: @color-white;
+                text-align: center;
+            }
+
+            p {
+                .norm-text();
+                color: @color-white;
+                text-align: center;
+                padding: 0;
+                font-size: 1rem;
+            }
+        }
+
+        .cardUp {
+            animation: down-up 2s linear infinite;
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        .flex-box-column();
+        background-position: center;
+        min-height: 90vh;
+
+        .porducts-overlay {
+            min-height: 80vh;
+            .flex-box();
+            flex-wrap: wrap;
+
+            .product-card {
+                animation: up-down 3s linear infinite;
+                width: 45%;
+                .flex-box-column();
+
+                img {
+                    width: 65%;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:768px) {
+        .flex-box-column();
+        background-size: cover;
+        background-position: right;
+        min-height: 100vh;
+
+        .porducts-overlay {
+            min-height: 100vh;
+            .mobile-sizing();
+            padding: 2rem 0;
+            .flex-box();
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            .product-card {
+                animation: up-down 3s linear infinite;
+                width: 100%;
+                .flex-box-column();
+                img {
+                    width: 45%;
+                }
+
+                h2 {
+                    .title-mob();
+                    color: @color-white;
+                    text-align: center;
+                }
+
+                p {
+                    .norm-text-mob();
+                    color: @color-white;
+                    text-align: center;
+                    padding: 0;
+                    width: 100%;
+                }
+
+                animation: unset;
+            }
         }
     }
 }
