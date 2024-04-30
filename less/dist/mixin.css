@@ -1,0 +1,152 @@
+.desktop-vh-sizing {
+  min-height: 100vh;
+}
+.desktop-vh-sizing-tablet {
+  min-height: 60vh;
+}
+/**********************************/
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-box-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/********************************/
+.norm-text {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #010001;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+}
+.norm-text-mob {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #010001;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.title {
+  font-family: Poppins, sans-serif;
+  color: #010001;
+  line-height: 3.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.title-mob {
+  font-family: Poppins, sans-serif;
+  color: #010001;
+  line-height: 3.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  text-align: center;
+}
+/**********************************/
+.button {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #010001;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #0a2050;
+  padding: 0.8rem 3rem;
+  outline: none;
+  border: 0.02rem solid transparent;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #ffffff;
+  color: #0a2050;
+  border: 0.02rem solid #0a2050;
+}
+.button-yellow {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #010001;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #0a2050;
+  padding: 0.8rem 3rem;
+  outline: none;
+  border: 0.02rem solid transparent;
+  transition: 0.2s linear;
+  cursor: pointer;
+  background-color: #e7d619;
+}
+.button-yellow:hover {
+  background-color: #ffffff;
+  color: #0a2050;
+  border: 0.02rem solid #0a2050;
+}
+.button-yellow:hover {
+  color: #e7d619;
+  border-color: #e7d619;
+}
+.button-mob {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #010001;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #0a2050;
+  padding: 0.8rem 3rem;
+  outline: none;
+  border: 0.02rem solid transparent;
+  transition: 0.2s linear;
+  cursor: pointer;
+  padding: 0.7rem 2.5rem;
+  font-size: 0.9rem;
+}
+.button-mob:hover {
+  background-color: #ffffff;
+  color: #0a2050;
+  border: 0.02rem solid #0a2050;
+}
+.button-yellow-mob {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #010001;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #0a2050;
+  padding: 0.8rem 3rem;
+  outline: none;
+  border: 0.02rem solid transparent;
+  transition: 0.2s linear;
+  cursor: pointer;
+  background-color: #e7d619;
+  padding: 0.7rem 2.5rem;
+  font-size: 0.9rem;
+}
+.button-yellow-mob:hover {
+  background-color: #ffffff;
+  color: #0a2050;
+  border: 0.02rem solid #0a2050;
+}
+.button-yellow-mob:hover {
+  color: #e7d619;
+  border-color: #e7d619;
+}
