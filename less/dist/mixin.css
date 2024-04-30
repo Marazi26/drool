@@ -4,6 +4,12 @@
 .desktop-vh-sizing-tablet {
   min-height: 60vh;
 }
+.desktop-sizing {
+  width: 80%;
+}
+.mobile-sizing {
+  width: 95%;
+}
 /**********************************/
 .flex-box {
   display: flex;
@@ -21,7 +27,7 @@
   font-family: Poppins, sans-serif;
   font-weight: 400;
   color: #010001;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5rem;
   padding: 1rem 0;
 }
@@ -29,7 +35,7 @@
   font-family: Poppins, sans-serif;
   font-weight: 400;
   color: #010001;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5rem;
   padding: 1rem 0;
   font-size: 0.9rem;
@@ -56,10 +62,10 @@
   font-family: Poppins, sans-serif;
   font-weight: 400;
   color: #010001;
-  font-size: 1rem;
   line-height: 1.5rem;
   padding: 1rem 0;
   font-weight: 500;
+  font-size: 1.1rem;
   color: #ffffff;
   background-color: #0a2050;
   padding: 0.8rem 3rem;
@@ -77,10 +83,10 @@
   font-family: Poppins, sans-serif;
   font-weight: 400;
   color: #010001;
-  font-size: 1rem;
   line-height: 1.5rem;
   padding: 1rem 0;
   font-weight: 500;
+  font-size: 1.1rem;
   color: #ffffff;
   background-color: #0a2050;
   padding: 0.8rem 3rem;
@@ -103,10 +109,10 @@
   font-family: Poppins, sans-serif;
   font-weight: 400;
   color: #010001;
-  font-size: 1rem;
   line-height: 1.5rem;
   padding: 1rem 0;
   font-weight: 500;
+  font-size: 1.1rem;
   color: #ffffff;
   background-color: #0a2050;
   padding: 0.8rem 3rem;
@@ -126,10 +132,10 @@
   font-family: Poppins, sans-serif;
   font-weight: 400;
   color: #010001;
-  font-size: 1rem;
   line-height: 1.5rem;
   padding: 1rem 0;
   font-weight: 500;
+  font-size: 1.1rem;
   color: #ffffff;
   background-color: #0a2050;
   padding: 0.8rem 3rem;
