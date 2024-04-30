@@ -774,7 +774,7 @@ img {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .about .about-overlay {
-    min-height: 45vh;
+    min-height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -811,6 +811,7 @@ img {
   justify-content: center;
   align-items: center;
   min-height: 90vh;
+  overflow: hidden;
 }
 .products .porducts-overlay {
   width: 80%;
@@ -933,6 +934,399 @@ img {
     color: #ffffff;
     text-align: center;
     padding: 0;
+    width: 100%;
+  }
+}
+.caring {
+  margin: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+.caring .caring-overlay {
+  min-height: 60vh;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.caring .caring-overlay .caring-img {
+  position: relative;
+  width: 50%;
+}
+.caring .caring-overlay .caring-img img {
+  width: 90%;
+  position: sticky;
+  z-index: 2;
+}
+.caring .caring-overlay .caring-img::after {
+  content: "";
+  background-image: url("../assets/caring/pet-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+  height: 110%;
+  width: 90%;
+  position: absolute;
+  left: -10rem;
+  bottom: -2rem;
+  z-index: 0;
+}
+.caring .caring-overlay .caring-card {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+}
+.caring .caring-overlay .caring-card .caring-card-img {
+  width: 10%;
+}
+.caring .caring-overlay .caring-card .caring-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+}
+.caring .caring-overlay .caring-card .caring-info h2 {
+  font-family: Poppins, sans-serif;
+  color: #010001;
+  line-height: 3.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.caring .caring-overlay .caring-card .caring-info p {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #010001;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+}
+.caring .caring-overlay .caring-card .caring-info div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.2rem;
+  width: 100%;
+}
+.caring .caring-overlay .caring-card .caring-info div a {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #010001;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: #e7d619;
+  text-transform: uppercase;
+}
+.caring .caring-overlay .caring-card .caring-info div img {
+  width: 3%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .caring {
+    margin: 5rem 0;
+  }
+  .caring .caring-overlay .caring-img img {
+    width: 100%;
+  }
+  .caring .caring-overlay .caring-img::after {
+    left: -5rem;
+    bottom: -2rem;
+  }
+  .caring .caring-overlay .caring-card .caring-card-img {
+    width: 10%;
+  }
+  .caring .caring-overlay .caring-card .caring-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: start;
+  }
+  .caring .caring-overlay .caring-card .caring-info h2 {
+    font-family: Poppins, sans-serif;
+    color: #010001;
+    line-height: 3.8rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: unset;
+  }
+  .caring .caring-overlay .caring-card .caring-info p {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #010001;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    text-align: center;
+    text-align: left;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .caring {
+    margin: 5rem 0;
+  }
+  .caring .caring-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .caring .caring-overlay .caring-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
+  .caring .caring-overlay .caring-img::after {
+    left: -3rem;
+    bottom: 0;
+  }
+  .caring .caring-overlay .caring-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .caring .caring-overlay .caring-card .caring-card-img {
+    width: 10%;
+  }
+  .caring .caring-overlay .caring-card .caring-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .caring .caring-overlay .caring-card .caring-info h2 {
+    font-family: Poppins, sans-serif;
+    color: #010001;
+    line-height: 3.8rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    text-align: center;
+    line-height: unset;
+    padding: 0;
+  }
+  .caring .caring-overlay .caring-card .caring-info p {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #010001;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .caring .caring-overlay .caring-card .caring-info div {
+    justify-content: center;
+  }
+}
+.choosing-us {
+  margin: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.choosing-us .choosing-us-overlay {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+}
+.choosing-us .choosing-us-overlay .choosing-title-img {
+  width: 5%;
+}
+.choosing-us .choosing-us-overlay .choosing-title-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+}
+.choosing-us .choosing-us-overlay .choosing-title-info h2 {
+  font-family: Poppins, sans-serif;
+  color: #010001;
+  line-height: 3.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: -1.3rem;
+}
+.choosing-us .choosing-us-overlay .choosing-title-info p {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #010001;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+}
+.choosing-us .choosing-us-overlay .choosing-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15rem;
+}
+.choosing-us .choosing-us-overlay .choosing-cards .choosing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 33.3%;
+}
+.choosing-us .choosing-us-overlay .choosing-cards .choosing-card .pet img {
+  width: 100%;
+}
+.choosing-us .choosing-us-overlay .choosing-cards .choosing-card .pet-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.choosing-us .choosing-us-overlay .choosing-cards .choosing-card .pet-info img {
+  width: 90%;
+}
+.choosing-us .choosing-us-overlay .choosing-cards .choosing-card .pet-info h2 {
+  font-family: Poppins, sans-serif;
+  color: #010001;
+  line-height: 3.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+.choosing-us .choosing-us-overlay .read-more {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  width: 100%;
+}
+.choosing-us .choosing-us-overlay .read-more a {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #010001;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: #e7d619;
+  text-transform: uppercase;
+}
+.choosing-us .choosing-us-overlay .read-more img {
+  width: 3%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .choosing-us {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .choosing-us .choosing-us-overlay .choosing-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  .choosing-us .choosing-us-overlay .choosing-cards .choosing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .choosing-us .choosing-us-overlay .choosing-cards .choosing-card .pet-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .choosing-us .choosing-us-overlay .choosing-cards .choosing-card .pet-info img {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .choosing-us {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .choosing-us .choosing-us-overlay {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .choosing-us .choosing-us-overlay .choosing-title {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .choosing-us .choosing-us-overlay .choosing-title .choosing-title-img {
+    width: 9%;
+  }
+  .choosing-us .choosing-us-overlay .choosing-title .choosing-title-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .choosing-us .choosing-us-overlay .choosing-title .choosing-title-info h2 {
+    font-family: Poppins, sans-serif;
+    color: #010001;
+    line-height: 3.8rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    text-align: center;
+    margin-top: -0.6rem;
+  }
+  .choosing-us .choosing-us-overlay .choosing-title .choosing-title-info p {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #010001;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .choosing-us .choosing-us-overlay .choosing-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .choosing-us .choosing-us-overlay .choosing-cards .choosing-card {
     width: 100%;
   }
 }

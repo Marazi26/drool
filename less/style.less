@@ -475,7 +475,7 @@ img {
 
     @media screen and (min-width:320px) and (max-width:768px) {
         .about-overlay {
-            min-height: 45vh;
+            min-height: 65vh;
             .flex-box-column();
             .mobile-sizing();
 
@@ -500,6 +500,7 @@ img {
     background-size: cover;
     .flex-box-column();
     min-height: 90vh;
+    overflow: hidden;
 
     .porducts-overlay {
         .desktop-sizing();
@@ -576,6 +577,7 @@ img {
                 animation: up-down 3s linear infinite;
                 width: 100%;
                 .flex-box-column();
+
                 img {
                     width: 45%;
                 }
@@ -595,6 +597,315 @@ img {
                 }
 
                 animation: unset;
+            }
+        }
+    }
+}
+
+.caring {
+    margin: 8rem 0;
+    .flex-box-column();
+    min-height: 60vh;
+
+    .caring-overlay {
+        min-height: 60vh;
+        .desktop-sizing();
+
+        .flex-box();
+        align-items: center;
+
+        .caring-img {
+            position: relative;
+            width: 50%;
+
+            img {
+                width: 90%;
+                position: sticky;
+                z-index: 2;
+            }
+
+            &::after {
+                content: "";
+                background-image: url("../assets/caring/pet-bg.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: left bottom;
+                height: 110%;
+                width: 90%;
+                position: absolute;
+                left: -10rem;
+                bottom: -2rem;
+                z-index: 0;
+            }
+        }
+
+        .caring-card {
+            width: 49%;
+            .flex-box-column();
+            align-items: start;
+
+            .caring-card-img {
+                width: 10%;
+            }
+
+            .caring-info {
+                .flex-box-column();
+                align-items: start;
+
+                h2 {
+                    .title();
+                }
+
+                p {
+                    .norm-text();
+                }
+
+                div {
+                    .flex-box();
+                    justify-content: flex-start;
+                    gap: .2rem;
+                    width: 100%;
+
+                    a {
+                        .norm-text();
+                        font-size: 1rem;
+                        color: @color-yellow;
+                        text-transform: uppercase;
+                    }
+
+                    img {
+                        width: 3%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        margin: 5rem 0;
+
+        .caring-overlay {
+            .caring-img {
+
+                img {
+                    width: 100%;
+
+                }
+
+                &::after {
+                    left: -5rem;
+                    bottom: -2rem;
+                }
+            }
+
+            .caring-card {
+                .caring-card-img {
+                    width: 10%;
+                }
+
+                .caring-info {
+                    .flex-box-column();
+                    align-items: start;
+
+                    h2 {
+                        .title();
+                        line-height: unset;
+                    }
+
+                    p {
+                        .norm-text-mob();
+                        text-align: left;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:768px) {
+        margin: 5rem 0;
+
+        .caring-overlay {
+            .flex-box-column();
+            gap: 2rem;
+
+            .caring-img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60%;
+
+                &::after {
+                    left: -3rem;
+                    bottom: 0;
+                }
+            }
+
+            .caring-card {
+                width: 100%;
+                .flex-box-column();
+
+                .caring-card-img {
+                    width: 10%;
+                }
+
+                .caring-info {
+                    .flex-box-column();
+
+                    h2 {
+                        .title-mob();
+                        line-height: unset;
+                        padding: 0;
+                    }
+
+                    p {
+                        .norm-text-mob();
+                    }
+
+                    div {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.choosing-us {
+    margin: 8rem 0;
+    .flex-box-column();
+
+    .choosing-us-overlay {
+        .desktop-sizing();
+        .flex-box-column();
+        align-items: start;
+        .choosing-title-img {
+            width: 5%;
+        }
+
+        .choosing-title-info{
+            .flex-box-column();
+            align-items: start;
+
+            h2 {
+                .title();
+                margin-top: -1.3rem;
+            }
+
+            p {
+                .norm-text();
+            }
+        }
+
+        .choosing-cards{
+            .flex-box();
+            gap: 15rem;
+            .choosing-card{
+                .flex-box-column();
+                gap: 2rem;
+                width: 33.3%;
+                .pet{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .pet-info{
+                    .flex-box-column();
+                    justify-content: center;
+                    img{
+                        width: 90%;
+                    }
+                    h2{
+                        .title-mob();
+                        text-transform: uppercase;
+                        padding: 1rem 0;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        .read-more{
+                margin-top: 2rem;
+                .flex-box();
+                justify-content: center;
+                gap: .2rem;
+                width: 100%;
+
+                a {
+                    .norm-text();
+                    font-size: 1rem;
+                    color: @color-yellow;
+                    text-transform: uppercase;
+                }
+
+                img {
+                    width: 3%;
+                }
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        margin: 3rem 0;
+        .flex-box-column();
+    
+        .choosing-us-overlay {
+            .choosing-cards{
+                .flex-box();
+                gap: 2rem;
+                .choosing-card{
+                    .flex-box-column();
+                    gap: 2rem;
+                    .pet-info{
+                        .flex-box-column();
+                        justify-content: center;
+                        img{
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media screen and (min-width:320px) and (max-width:768px) {
+        margin: 3rem 0;
+        .flex-box-column();
+    
+        .choosing-us-overlay {
+            .desktop-sizing();
+            .flex-box-column();
+            align-items: center;
+            
+            .choosing-title{
+                width: 100%;
+                margin-bottom: 1rem;
+                .flex-box-column();
+                .choosing-title-img {
+                    width: 9%;
+                }
+        
+                .choosing-title-info{
+                    .flex-box-column();
+                    align-items: center;
+        
+                    h2 {
+                        .title-mob();
+                        margin-top: -.6rem;
+                    }
+        
+                    p {
+                        .norm-text-mob();
+                    }
+                }
+            }
+    
+            .choosing-cards{
+                width: 100%;
+                .flex-box-column();
+                gap: 1.5rem;
+                .choosing-card{
+                    width: 100%;
+                    }
             }
         }
     }
