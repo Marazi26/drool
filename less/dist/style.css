@@ -773,8 +773,11 @@ img {
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
+  .about {
+    min-height: 40vh;
+  }
   .about .about-overlay {
-    min-height: 65vh;
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1268,7 +1271,7 @@ img {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .choosing-us {
-    margin: 3rem 0;
+    margin: 1rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1328,5 +1331,456 @@ img {
   }
   .choosing-us .choosing-us-overlay .choosing-cards .choosing-card {
     width: 100%;
+  }
+}
+.food {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+.food .food-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  background-color: #0a2050;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+.food .food-overlay {
+  position: sticky;
+  z-index: 1;
+  padding: 5% 0;
+  width: 80%;
+}
+.food .food-overlay .food-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  width: 100%;
+}
+.food .food-overlay .food-title .food-title-img img {
+  width: 100%;
+}
+.food .food-overlay .food-title-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.food .food-overlay .food-title-info h2 {
+  font-family: Poppins, sans-serif;
+  color: #010001;
+  line-height: 3.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+.food .food-overlay .food-title-info p {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #010001;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  text-align: center;
+  width: 82%;
+  color: #ffffff;
+}
+.food .food-overlay .food-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: end;
+  margin-top: 2rem;
+}
+.food .food-overlay .food-cards .food-card .food-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.food .food-overlay .food-cards .food-card .food-card-info h3 {
+  font-family: Poppins, sans-serif;
+  color: #010001;
+  line-height: 3.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #e7d619;
+  font-weight: 400;
+}
+.food .food-overlay .food-cards .food-card .food-card-info h2 {
+  font-family: Poppins, sans-serif;
+  color: #010001;
+  line-height: 3.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  text-align: center;
+  color: #e7d619;
+}
+.food .food-overlay .food-cards .food-card .food-card-info h2 span {
+  color: #0a2050;
+}
+.food .food-overlay .food-cards .food-card .food-card-info button {
+  font-family: Poppins, sans-serif;
+  color: #010001;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #ffffff;
+  background-color: #0a2050;
+  padding: 0.8rem 3rem;
+  outline: none;
+  border: 0.02rem solid transparent;
+  transition: 0.2s linear;
+  cursor: pointer;
+  color: #e7d619;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+.food .food-overlay .food-cards .food-card .food-card-info button:hover {
+  background-color: #ffffff;
+  color: #0a2050;
+  border: 0.02rem solid #0a2050;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .food {
+    min-height: 80vh;
+  }
+  .food .food-container {
+    min-height: 50%;
+  }
+  .food .food-overlay {
+    padding: 3% 0;
+  }
+  .food .food-overlay .food-card .food-card-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .food .food-overlay .food-card .food-card-img img {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .food {
+    min-height: 80vh;
+  }
+  .food .food-container {
+    height: 30%;
+  }
+  .food .food-overlay {
+    padding: 5% 0;
+  }
+  .food .food-overlay .food-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .food .food-overlay .food-cards .food-card {
+    width: 100%;
+  }
+  .food .food-overlay .food-cards .food-card .food-card-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .food .food-overlay .food-cards .food-card .food-card-img img {
+    width: 100%;
+  }
+  .food .food-overlay .food-cards .food-card .food-card-info p {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #010001;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+.costumer {
+  background-image: url("../assets/costumer/client-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  position: relative;
+}
+.costumer .costumer-overlay {
+  position: sticky;
+  z-index: 1;
+  padding: 5% 0;
+  width: 80%;
+}
+.costumer .costumer-overlay .costumer-title .costumer-title-img {
+  width: 5%;
+}
+.costumer .costumer-overlay .costumer-title .costumer-title-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+}
+.costumer .costumer-overlay .costumer-title .costumer-title-info h2 {
+  font-family: Poppins, sans-serif;
+  color: #010001;
+  line-height: 3.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: -1.3rem;
+}
+.costumer .costumer-overlay .costumer-title .costumer-title-info p {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #010001;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  padding: 0;
+}
+.costumer .costumer-overlay .costumer-card {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: start;
+}
+.costumer .costumer-overlay .costumer-card .costumer-card-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 2rem;
+}
+.costumer .costumer-overlay .costumer-card .costumer-card-info .costumer-card-img {
+  min-width: 30%;
+}
+.costumer .costumer-overlay .costumer-card .costumer-card-info .costumer-card-details h2 {
+  font-family: Poppins, sans-serif;
+  color: #010001;
+  line-height: 3.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #0a2050;
+  padding: 0;
+  font-size: 1.8rem;
+}
+.costumer .costumer-overlay .costumer-card .costumer-card-info .costumer-card-details p {
+  font-family: Poppins, sans-serif;
+  color: #010001;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
+  font-weight: 400;
+  color: #0a2050;
+  padding: 0;
+}
+.costumer .costumer-overlay .costumer-card .costumer-card-info .costumer-card-details i {
+  font-size: 2.2rem;
+}
+.costumer .costumer-overlay .costumer-card .costumer-card-buttons {
+  width: 33%;
+  gap: 0.5rem;
+  padding-top: 2rem;
+}
+.costumer .costumer-overlay .costumer-card .costumer-card-buttons button {
+  padding: 1.1rem 1.2rem;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background-color: #e7d619;
+  cursor: pointer;
+}
+.costumer .costumer-overlay .costumer-card .costumer-card-buttons button i {
+  color: #ffffff;
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .costumer {
+    min-height: 45vh;
+  }
+  .costumer .costumer-overlay .costumer-card {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: start;
+  }
+  .costumer .costumer-overlay .costumer-card .costumer-card-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 2rem;
+  }
+  .costumer .costumer-overlay .costumer-card .costumer-card-info .costumer-card-img {
+    min-width: 40%;
+  }
+  .costumer .costumer-overlay .costumer-card .costumer-card-info .costumer-card-details h2 {
+    font-family: Poppins, sans-serif;
+    color: #010001;
+    line-height: 3.8rem;
+    font-size: 2rem;
+    font-weight: 700;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #0a2050;
+    padding: 0;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+  .costumer .costumer-overlay .costumer-card .costumer-card-info .costumer-card-details p {
+    font-family: Poppins, sans-serif;
+    color: #010001;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+    font-weight: 400;
+    color: #0a2050;
+  }
+  .costumer .costumer-overlay .costumer-card .costumer-card-info .costumer-card-details i {
+    font-size: 2.2rem;
+  }
+  .costumer .costumer-overlay .costumer-card .costumer-card-buttons {
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2rem 0.5rem;
+  }
+  .costumer .costumer-overlay .costumer-card .costumer-card-buttons button {
+    padding: 1rem 1.1rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .costumer {
+    min-height: 70vh;
+    position: relative;
+  }
+  .costumer .costumer-overlay {
+    position: sticky;
+    z-index: 1;
+    padding: 5% 0;
+    width: 95%;
+  }
+  .costumer .costumer-overlay .costumer-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .costumer .costumer-overlay .costumer-title .costumer-title-img {
+    width: 10%;
+  }
+  .costumer .costumer-overlay .costumer-title .costumer-title-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .costumer .costumer-overlay .costumer-title .costumer-title-info h2 {
+    font-family: Poppins, sans-serif;
+    color: #010001;
+    line-height: 3.8rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    text-align: center;
+    margin: unset;
+  }
+  .costumer .costumer-overlay .costumer-title .costumer-title-info p {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #010001;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0;
+  }
+  .costumer .costumer-overlay .costumer-card {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .costumer .costumer-overlay .costumer-card .costumer-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .costumer .costumer-overlay .costumer-card .costumer-card-info .costumer-card-img {
+    min-width: 30%;
+  }
+  .costumer .costumer-overlay .costumer-card .costumer-card-info .costumer-card-details h2 {
+    font-family: Poppins, sans-serif;
+    color: #010001;
+    line-height: 3.8rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #0a2050;
+    padding: 0;
+    font-size: 1.8rem;
+  }
+  .costumer .costumer-overlay .costumer-card .costumer-card-info .costumer-card-details p {
+    font-family: Poppins, sans-serif;
+    color: #010001;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 400;
+    color: #0a2050;
+    padding: 0;
+  }
+  .costumer .costumer-overlay .costumer-card .costumer-card-info .costumer-card-details i {
+    font-size: 2.2rem;
+    display: block;
+    text-align: center;
+  }
+  .costumer .costumer-overlay .costumer-card .costumer-card-buttons {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+  }
+  .costumer .costumer-overlay .costumer-card .costumer-card-buttons button {
+    padding: 1.4rem 1.5rem;
+  }
+  .costumer .costumer-overlay .costumer-card .costumer-card-buttons button i {
+    color: #ffffff;
+    font-size: 1rem;
   }
 }
